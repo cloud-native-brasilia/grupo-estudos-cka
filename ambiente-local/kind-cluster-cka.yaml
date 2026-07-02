@@ -1,0 +1,52 @@
+# ==============================================================================
+# Cluster kind para prática da CKA — Multi-nó
+# ------------------------------------------------------------------------------
+# 1 control-plane + 2 workers.
+#
+# Este layout permite praticar cenários que exigem múltiplos nós:
+#   - Scheduling (NodeAffinity, Taints & Tolerations, nodeSelector)
+#   - Manutenção de nós (drain, cordon, uncordon)
+#   - Networking entre Pods em nós distintos
+#
+# Uso:
+#   kind create cluster --name cka-lab --config kind-cluster-cka.yaml
+# ==============================================================================
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+name: cka-lab
+
+nodes:
+  # ----------------------------------------------------------------------------
+  # Nó de control plane: roda api-server, scheduler, controller-manager e etcd.
+  # ----------------------------------------------------------------------------
+  - role: control-plane
+    # Mapeamento de portas para acessar Ingress/NodePort a partir do host (opcional).
+    # Útil no bloco de Services & Networking.
+    extraPortMappings:
+      - containerPort: 30080   # NodePort -> localhost:30080
+        hostPort: 30080
+        protocol: TCP
+      - containerPort: 30443   # NodePort -> localhost:30443
+        hostPort: 30443
+        protocol: TCP
+
+  # ----------------------------------------------------------------------------
+  # Worker 1: recebe cargas de trabalho comuns.
+  # Sugestão: rotule com `disktype=ssd` para praticar NodeAffinity.
+  #   kubectl label node cka-lab-worker disktype=ssd
+  # ----------------------------------------------------------------------------
+  - role: worker
+
+  # ----------------------------------------------------------------------------
+  # Worker 2: segundo nó para praticar drain/cordon e distribuição de Pods.
+  # ----------------------------------------------------------------------------
+  - role: worker
+
+# ------------------------------------------------------------------------------
+# (Opcional) Fixar a versão do Kubernetes usando a imagem do nó.
+# Descomente e ajuste a tag para casar com a versão vigente no edital da CKA.
+# Consulte as imagens disponíveis em: https://github.com/kubernetes-sigs/kind/releases
+#
+# Exemplo (aplicar em CADA nó, dentro de cada item da lista `nodes`):
+#   image: kindest/node:v1.31.0@sha256:<digest-oficial-da-release>
+# ------------------------------------------------------------------------------
