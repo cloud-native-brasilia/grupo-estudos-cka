@@ -102,8 +102,15 @@ Uma vez por mês temos um encontro ao vivo (call de ~1h):
 grupo-estudos-cka/
 ├── README.md              # Você está aqui
 ├── ROADMAP.md             # Edital dividido em blocos + cronograma (ordem didática)
+├── THIRD_PARTY_NOTICES.md # Avisos de licença de materiais de terceiros incorporados
 ├── curriculo-oficial/     # Currículo oficial da CKA (fonte primária)
 │   └── CKA_Curriculum_v1.35.pdf
+├── guias-de-estudo/       # Guias e resumos compartilhados por membros do grupo
+│   └── guia-estrategico-kodekloud-2026.pdf
+├── gabaritos-yaml/        # Templates YAML para recursos sem forma imperativa
+│   └── (23 arquivos .yaml — NetworkPolicy, PV, RBAC, StorageClass, etc.)
+├── cheatsheet/            # Referência rápida de comandos para o dia da prova
+│   └── cka-cheatsheet-comunidade.md
 ├── atas/                  # Atas dos encontros síncronos mensais
 │   └── 2026-07-01-kickoff.md
 ├── ambiente-local/        # Como montar um cluster local com kind
@@ -123,8 +130,8 @@ grupo-estudos-cka/
 1. Leia este README por completo.
 2. Configure seu ambiente local seguindo o guia em [ambiente-local/README.md](ambiente-local/README.md).
 3. Estude a estrutura do edital no [ROADMAP.md](ROADMAP.md).
-4. Explore os materiais em [links-e-referencias/README.md](links-e-referencias/README.md).
-5. Pratique com os [simulados/EXERCICIOS-EXEMPLO.md](simulados/EXERCICIOS-EXEMPLO.md) e o [simulados/BANCO-DE-EXERCICIOS.md](simulados/BANCO-DE-EXERCICIOS.md) (50 questões).
+4. Explore os materiais em [links-e-referencias/README.md](links-e-referencias/README.md), os [guias-de-estudo/](guias-de-estudo/) e o [cheatsheet/](cheatsheet/).
+5. Pratique com os [simulados/EXERCICIOS-EXEMPLO.md](simulados/EXERCICIOS-EXEMPLO.md) e o [simulados/BANCO-DE-EXERCICIOS.md](simulados/BANCO-DE-EXERCICIOS.md) (50 questões), usando os [gabaritos-yaml/](gabaritos-yaml/) quando precisar de um template pronto.
 6. Abra sua primeira Issue de dúvida ou submeta seu primeiro lab. 💪
 
 ---

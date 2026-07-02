@@ -48,12 +48,15 @@ Durante a prova CKA você pode consultar **apenas** os domínios oficiais abaixo
 
 | Repositório | URL | Descrição |
 | :--- | :--- | :--- |
+| **CKA-Certified-Kubernetes-Administrator (theplatformlab)** | https://github.com/theplatformlab/CKA-Certified-Kubernetes-Administrator | Notas de estudo de quem tirou 89% na CKA em 2026. 31 exercícios práticos, cheat sheet, 23 gabaritos YAML e 2 simulados completos com gabarito. Licença MIT. **Usamos trechos deste repositório localmente** — veja [`../gabaritos-yaml/`](../gabaritos-yaml/) e [`../cheatsheet/`](../cheatsheet/). |
 | **CKA Exercises ( dgkanatsios)** | https://github.com/dgkanatsios/CKAD-exercises | Clássico de CKAD, ótimo para fundamentos de workloads (útil também para CKA). |
 | **Kubernetes the Hard Way** | https://github.com/kelseyhightower/kubernetes-the-hard-way | Monte um cluster do zero, componente por componente. Excelente para o bloco de Arquitetura. |
 | **CKA Practice (bmuschko)** | https://github.com/bmuschko/cka-crash-course | Crash course com exercícios práticos alinhados ao edital da CKA. |
 | **Kubernetes Examples** | https://github.com/kubernetes/examples | Exemplos oficiais de manifests para estudar padrões. |
 
 > ⚠️ Alguns repositórios comunitários podem estar desatualizados em relação à versão vigente do Kubernetes na prova. Sempre valide os comandos no seu cluster local do [ambiente-local](../ambiente-local/README.md).
+>
+> 📄 Materiais adaptados de terceiros e usados neste repositório têm sua licença documentada em [`../THIRD_PARTY_NOTICES.md`](../THIRD_PARTY_NOTICES.md).
 
 ---
 
@@ -64,6 +67,18 @@ Durante a prova CKA você pode consultar **apenas** os domínios oficiais abaixo
 | **Kubernetes Administrator (CKA) — Mumshad / KodeKloud** | Udemy / KodeKloud | Curso mais popular para a CKA, com labs interativos. |
 | **Kubernetes Documentation Tutorials** | kubernetes.io | Tutoriais oficiais passo a passo. |
 | **CNCF YouTube** | https://www.youtube.com/@cncf | Palestras e deep-dives da comunidade. |
+
+---
+
+## 📚 Materiais Locais do Grupo
+
+Além dos links externos, este repositório já reúne alguns materiais prontos para consulta offline:
+
+| Recurso | Local | Descrição |
+| :--- | :--- | :--- |
+| **Guias de estudo compartilhados** | [`../guias-de-estudo/`](../guias-de-estudo/) | Guias e resumos trazidos por membros do grupo (ex.: mapeamento de aulas do KodeKloud para os domínios oficiais). |
+| **Gabaritos YAML** | [`../gabaritos-yaml/`](../gabaritos-yaml/) | Templates prontos para os recursos que não têm forma imperativa no `kubectl` (NetworkPolicy, PV, StorageClass, RBAC, etc.). |
+| **Cheat sheet da comunidade** | [`../cheatsheet/`](../cheatsheet/) | Referência de uma página com os comandos mais usados na prova. |
 
 ---
 
