@@ -79,20 +79,20 @@ Uma vez por mês temos um encontro ao vivo (call de ~1h):
 - ❓ Discussão das Issues mais difíceis do mês.
 - 🎯 Alinhamento do próximo bloco no [ROADMAP.md](ROADMAP.md).
 
-> Os encontros são gravados sempre que possível, para quem não puder participar ao vivo.
+> Não gravamos os encontros. Em vez disso, publicamos a **ata** de cada reunião no repositório, para quem não puder participar ao vivo.
 
 #### Agenda de Encontros
 
-| # | Data | Google Meet | Gravação |
+| # | Data | Google Meet | Ata |
 | :---: | :--- | :--- | :--- |
-| 1 — Kickoff | 01/07/2026 (quarta-feira), 20h | _(a definir)_ | _(a definir)_ |
+| 1 — Kickoff | 01/07/2026 (quarta-feira), 20h | _(a definir)_ | [2026-07-01-kickoff.md](atas/2026-07-01-kickoff.md) |
 | 2 | 2ª semana de julho/2026 | _(a definir)_ | _(a definir)_ |
 | 3 | Agosto/2026 | _(a definir)_ | _(a definir)_ |
 | 4 | Setembro/2026 | _(a definir)_ | _(a definir)_ |
 | 5 | Outubro/2026 | _(a definir)_ | _(a definir)_ |
 | 6 | Novembro/2026 (revisão final) | _(a definir)_ | _(a definir)_ |
 
-> 📌 As datas e horários exatos dos encontros a partir do 2º serão confirmados via Issue fixada no repositório com, no mínimo, uma semana de antecedência. Atualize esta tabela via PR assim que o link do Google Meet e a gravação de cada encontro estiverem disponíveis.
+> 📌 As datas e horários exatos dos encontros a partir do 2º serão confirmados via Issue fixada no repositório com, no mínimo, uma semana de antecedência. Atualize esta tabela via PR assim que o link do Google Meet estiver disponível e assim que a ata de cada encontro for publicada em [`atas/`](atas/).
 
 ---
 
@@ -104,6 +104,8 @@ grupo-estudos-cka/
 ├── ROADMAP.md             # Edital dividido em blocos + cronograma (ordem didática)
 ├── curriculo-oficial/     # Currículo oficial da CKA (fonte primária)
 │   └── CKA_Curriculum_v1.35.pdf
+├── atas/                  # Atas dos encontros síncronos mensais
+│   └── 2026-07-01-kickoff.md
 ├── ambiente-local/        # Como montar um cluster local com kind
 │   ├── README.md
 │   └── kind-cluster-cka.yaml
