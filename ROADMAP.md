@@ -32,12 +32,38 @@ Esta é a ordem e a nomenclatura **como aparecem no documento oficial da CNCF**:
 > Por isso, neste roadmap os **blocos foram renumerados (1 a 5) na ordem em que sugerimos estudá-los**. O peso oficial de cada um continua indicado entre parênteses no título — use a tabela acima como referência de "quanto cai na prova", e a numeração abaixo como referência de "em que ordem estudar".
 
 ```
+0️⃣ Fundamentos (Nivelamento)   → base necessária antes de orquestrar containers
 1️⃣ Workloads & Scheduling   → conceitos concretos: Pods, Deployments, config
 2️⃣ Services & Networking    → conectar o que você acabou de criar
 3️⃣ Storage                  → persistir dados das aplicações
 4️⃣ Cluster Architecture     → agora sim: administrar o cluster por trás de tudo
 5️⃣ Troubleshooting          → transversal, exige domínio dos 4 blocos anteriores
 ```
+
+---
+
+## 🏗️ Bloco 0 — Fundamentos e Nivelamento (Pré-requisitos)
+
+Como o grupo possui pessoas com diferentes níveis de experiência, os passos iniciais focam na base conceitual indispensável. Para nivelar o conhecimento, membros mais experientes conduzirão explanações sobre estes temas basilares:
+
+**Ementa - Encontro de Nivelamento 1: O Paradigma da Conteinerização**
+- História da infraestrutura: Bare-metal vs Máquinas Virtuais (VMs) vs Containers.
+- O que é um container de fato no Linux (Namespaces para isolamento, Cgroups para recursos).
+- Ecossistema: Diferença entre Docker, containerd e o padrão CRI (Container Runtime Interface).
+- *Prática:* Rodando e inspecionando um container localmente.
+
+**Ementa - Encontro de Nivelamento 2: Redes e Linux para DevOps**
+- Fundamentos de redes: TCP/IP, Portas, NAT e como o DNS resolve nomes.
+- O que é e como funciona um Load Balancer e Proxy Reverso.
+- Comandos essenciais de Linux para troubleshooting (curl, ping, ip, grep, visualização de logs).
+- *Prática:* Testando a comunicação entre processos locais.
+
+**Ementa - Encontro de Nivelamento 3: Mundo Declarativo e a Arquitetura do Kubernetes**
+- O que é orquestração e os problemas que o Kubernetes resolve?
+- Paradigma Imperativo (comandos) vs Declarativo (estado desejado).
+- Sintaxe YAML na prática (listas, dicionários, indentação, boas práticas).
+- Visão panorâmica da arquitetura (API Server, ETCD, Kubelet, Control Plane vs Worker nodes).
+- *Prática:* Escrevendo e entendendo o primeiro manifesto YAML.
 
 ---
 
@@ -103,29 +129,32 @@ O maior peso da prova, e o último bloco do nosso roadmap por ser **transversal*
 
 ---
 
-## 📅 Cronograma Sugerido (17 semanas + revisão)
+## 📅 Cronograma Sugerido (20 semanas + revisão)
 
 Sugestão de ritmo com base em **~6 a 8 horas de estudo por semana**, seguindo a **ordem didática** acima. Ajuste conforme a disponibilidade do grupo. Os encontros síncronos agora são **mensais** — consulte a agenda e os links no [README.md](README.md#-agenda-de-encontros).
 
 | Semana | Foco | Entregável |
 | :---: | :--- | :--- |
-| **1** | 🔧 Ambiente local (kind) + `kubectl` básico + Pods e ReplicaSets | Cluster local rodando, primeiro Pod criado |
-| **2** | 1️⃣ Deployments — rolling update e rollback | 📅 **Encontro #2** (2ª semana de julho) + PR de lab rolling update |
-| **3** | 1️⃣ ConfigMaps, Secrets e workload autoscaling (HPA) | PR de lab ConfigMap/Secret/HPA |
-| **4** | 1️⃣ Scheduling — `nodeSelector`, NodeAffinity, Taints & Tolerations, limits | PR de lab NodeAffinity |
-| **5** | 2️⃣ Services — ClusterIP e NodePort | PR de lab exposição de Deployment |
-| **6** | 2️⃣ Ingress, Gateway API e CoreDNS | 📅 **Encontro #3** (Agosto) + PR de lab Ingress |
-| **7** | 2️⃣ NetworkPolicies e conectividade entre Pods | PR de lab NetworkPolicy |
-| **8** | 3️⃣ Volumes (`emptyDir`, `hostPath`) e PV/PVC | PR de lab PV/PVC |
-| **9** | 3️⃣ StorageClasses, provisionamento dinâmico e reclaim policy | PR de lab StorageClass |
-| **10** | 4️⃣ Arquitetura do cluster — infraestrutura, `kubeadm init`/`join` | 📅 **Encontro #4** (Setembro) + lab de bootstrap de cluster |
-| **11** | 4️⃣ RBAC — Roles, ClusterRoles, ServiceAccounts | PR de lab RBAC |
-| **12** | 4️⃣ Backup/restore do ETCD, upgrade de cluster com `kubeadm` | PR de lab ETCD |
-| **13** | 4️⃣ HA control plane, Helm, Kustomize, CRDs e operators | 📅 **Encontro #5** (Outubro) + PR de lab Helm |
-| **14** | 5️⃣ Troubleshooting de Pods e containers | PR de lab debug CrashLoopBackOff |
-| **15** | 5️⃣ Troubleshooting de nós e componentes do control plane | PR de lab nó `NotReady` |
-| **16** | 5️⃣ Troubleshooting de serviços, rede e monitoramento de recursos | PR de lab debug de Service |
-| **17** | 🎯 Simulado completo cronometrado (Killer.sh) + revisão geral | 📅 **Encontro #6** (Novembro) — revisão final e agendamento das provas 🚀 |
+| **1** | 0️⃣ Nivelamento: O Paradigma da Conteinerização | 📅 **Encontro #2 (Nivelamento 1)** |
+| **2** | 0️⃣ Nivelamento: Redes e Linux para DevOps | 📅 **Encontro #3 (Nivelamento 2)** |
+| **3** | 0️⃣ Nivelamento: Declarativo e Arq. do Kubernetes | 📅 **Encontro #4 (Nivelamento 3)** |
+| **4** | 🔧 Ambiente local (kind) + `kubectl` básico + Pods | Cluster local rodando, primeiro Pod criado |
+| **5** | 1️⃣ Deployments — rolling update e rollback | 📅 **Encontro Mensal** + PR de lab rolling update |
+| **6** | 1️⃣ ConfigMaps, Secrets e workload autoscaling (HPA) | PR de lab ConfigMap/Secret/HPA |
+| **7** | 1️⃣ Scheduling — `nodeSelector`, NodeAffinity, Taints | PR de lab NodeAffinity |
+| **8** | 2️⃣ Services — ClusterIP e NodePort | PR de lab exposição de Deployment |
+| **9** | 2️⃣ Ingress, Gateway API e CoreDNS | 📅 **Encontro Mensal** + PR de lab Ingress |
+| **10** | 2️⃣ NetworkPolicies e conectividade entre Pods | PR de lab NetworkPolicy |
+| **11** | 3️⃣ Volumes (`emptyDir`, `hostPath`) e PV/PVC | PR de lab PV/PVC |
+| **12** | 3️⃣ StorageClasses, provisionamento e reclaim policy | PR de lab StorageClass |
+| **13** | 4️⃣ Arquitetura do cluster — infraestrutura, `kubeadm` | 📅 **Encontro Mensal** + lab de bootstrap de cluster |
+| **14** | 4️⃣ RBAC — Roles, ClusterRoles, ServiceAccounts | PR de lab RBAC |
+| **15** | 4️⃣ Backup/restore do ETCD, upgrade de cluster | PR de lab ETCD |
+| **16** | 4️⃣ HA control plane, Helm, Kustomize, CRDs, operators| 📅 **Encontro Mensal** + PR de lab Helm |
+| **17** | 5️⃣ Troubleshooting de Pods e containers | PR de lab debug CrashLoopBackOff |
+| **18** | 5️⃣ Troubleshooting de nós e componentes do control plane | PR de lab nó `NotReady` |
+| **19** | 5️⃣ Troubleshooting de serviços, rede e monitoramento | PR de lab debug de Service |
+| **20** | 🎯 Simulado completo cronometrado (Killer.sh) + revisão | 📅 **Encontro de Revisão** — agendamento das provas 🚀 |
 
 ---
 

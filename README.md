@@ -86,11 +86,12 @@ Uma vez por mês temos um encontro ao vivo (call de ~1h):
 | # | Data | Google Meet | Ata |
 | :---: | :--- | :--- | :--- |
 | 1 — Kickoff | 01/07/2026 (quarta-feira), 20h | _(a definir)_ | [2026-07-01-kickoff.md](atas/2026-07-01-kickoff.md) |
-| 2 | 08/07/2026 (quarta-feira), 20h–21h30 | [meet.google.com/ffi-jikf-ajw](https://meet.google.com/ffi-jikf-ajw) | _(a definir)_ |
-| 3 | Agosto/2026 | _(a definir)_ | _(a definir)_ |
-| 4 | Setembro/2026 | _(a definir)_ | _(a definir)_ |
-| 5 | Outubro/2026 | _(a definir)_ | _(a definir)_ |
-| 6 | Novembro/2026 (revisão final) | _(a definir)_ | _(a definir)_ |
+| 2 — Nivelamento 1 | 08/07/2026 (quarta-feira), 20h–21h30 | [meet.google.com/ffi-jikf-ajw](https://meet.google.com/ffi-jikf-ajw) | _(a definir)_ |
+| 3 — Nivelamento 2 | Agosto/2026 | _(a definir)_ | _(a definir)_ |
+| 4 — Nivelamento 3 | Setembro/2026 | _(a definir)_ | _(a definir)_ |
+| 5 — Mensal | Outubro/2026 | _(a definir)_ | _(a definir)_ |
+| 6 — Mensal | Novembro/2026 | _(a definir)_ | _(a definir)_ |
+| 7 — Revisão Final | Dezembro/2026 | _(a definir)_ | _(a definir)_ |
 
 > 📌 As datas e horários exatos dos encontros a partir do 3º serão confirmados via Issue fixada no repositório com, no mínimo, uma semana de antecedência. Atualize esta tabela via PR assim que o link do Google Meet estiver disponível e assim que a ata de cada encontro for publicada em [`atas/`](atas/).
 
