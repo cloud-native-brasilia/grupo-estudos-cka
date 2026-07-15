@@ -86,7 +86,7 @@ Uma vez por mês temos um encontro ao vivo (call de ~1h):
 | # | Data | Google Meet | Ata |
 | :---: | :--- | :--- | :--- |
 | 1 — Kickoff | 01/07/2026 (quarta-feira), 20h | _(a definir)_ | [2026-07-01-kickoff.md](atas/2026-07-01-kickoff.md) |
-| 2 — Nivelamento 1 | 08/07/2026 (quarta-feira), 20h–21h30 | [meet.google.com/ffi-jikf-ajw](https://meet.google.com/ffi-jikf-ajw) | _(a definir)_ |
+| 2 — Nivelamento 1 | 08/07/2026 (quarta-feira), 20h–21h30 | [meet.google.com/ffi-jikf-ajw](https://meet.google.com/ffi-jikf-ajw) | [2026-07-08-encontro-2.md](atas/2026-07-08-encontro-2.md) |
 | 3 — Nivelamento 2 | 15/07/2026 (quarta-feira), 20h–21h30 | [meet.google.com/qsp-rmvz-eyk](https://meet.google.com/qsp-rmvz-eyk) | _(a definir)_ |
 | 4 — Nivelamento 3 | 22/07/2026 (quarta-feira), 20h–21h30 | [meet.google.com/pur-dzxo-mwz](https://meet.google.com/pur-dzxo-mwz) | _(a definir)_ |
 | 5 — Mensal | Agosto/2026 | _(a definir)_ | _(a definir)_ |
