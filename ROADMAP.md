@@ -139,9 +139,9 @@ Sugestão de ritmo com base em **~6 a 8 horas de estudo por semana**, seguindo a
 | **2** | 0️⃣ Nivelamento: Redes e Linux para DevOps | 📅 **Encontro #3 (Nivelamento 2)** |
 | **3** | 0️⃣ Nivelamento: Declarativo e Arq. do Kubernetes | 📅 **Encontro #4 (Nivelamento 3)** |
 | **4** | 🔧 Ambiente local (kind) + `kubectl` básico + Pods | Cluster local rodando, primeiro Pod criado |
-| **5** | 1️⃣ Deployments — rolling update e rollback | 📅 **Encontro Mensal** + PR de lab rolling update |
-| **6** | 1️⃣ ConfigMaps, Secrets e workload autoscaling (HPA) | PR de lab ConfigMap/Secret/HPA |
-| **7** | 1️⃣ Scheduling — `nodeSelector`, NodeAffinity, Taints | PR de lab NodeAffinity |
+| **5** | 1️⃣ Deployments — rolling update e rollback | PR de lab rolling update |
+| **6** | 1️⃣ Scheduling — `nodeSelector`, NodeAffinity, Taints | 📅 **Encontro Mensal** + PR de lab NodeAffinity |
+| **7** | 1️⃣ ConfigMaps, Secrets e workload autoscaling (HPA) | PR de lab ConfigMap/Secret/HPA |
 | **8** | 2️⃣ Services — ClusterIP e NodePort | PR de lab exposição de Deployment |
 | **9** | 2️⃣ Ingress, Gateway API e CoreDNS | 📅 **Encontro Mensal** + PR de lab Ingress |
 | **10** | 2️⃣ NetworkPolicies e conectividade entre Pods | PR de lab NetworkPolicy |
